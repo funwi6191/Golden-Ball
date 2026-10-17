@@ -14,11 +14,11 @@ Add screenshots of your actual application to the `images/` folder in this repos
 
 ### Player Leaderboard
 
-![Golden Ball  Voting Page](images/leaderboard.JPG)
+![Golden Ball  Voting Page](images/leaderboard.jpg)
 
 ### Voting Page
 
-![Golden Ball Leaderboard](images/voting.JPG)
+![Golden Ball Leaderboard](images/voting.jpg)
 
 > Replace the example filenames with your actual screenshot filenames. GitHub will display the images automatically when the paths match.
 
