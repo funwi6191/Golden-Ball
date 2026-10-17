@@ -5,7 +5,7 @@ Golden Ball is an online football voting platform inspired by the Ballon d'Or, d
 This repository contains the **frontend only**, built with HTML, CSS, and JavaScript. The backend and API services are maintained separately.
 
 ## live demo site
-![Golden Ball](https://funwi6191.github.io/Golden-Ball/)
+[Golden Ball](https://funwi6191.github.io/Golden-Ball/)
 
 
 ## 📸 Screenshots
