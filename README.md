@@ -131,4 +131,4 @@ Golden Ball aims to provide football fans with an accessible voting experience w
 
 ## 📄 License
 
-No license has been specified yet. Add a license file if you intend to grant others permission to reuse or distribute the project.
+No license has been specified yet.
