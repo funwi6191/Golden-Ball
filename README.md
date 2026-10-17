@@ -127,7 +127,7 @@ Golden Ball aims to provide football fans with an accessible voting experience w
 **Funwi Checy**
 
 - GitHub: [@funwi6191](https://github.com/funwi6191)
-- LinkedIn: [My LinkedIn profile](https://www.linkedin.com/)
+- LinkedIn: [My LinkedIn profile](https://www.linkedin.com/in/funwi-checy-4737a3323?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 ## 📄 License
 
