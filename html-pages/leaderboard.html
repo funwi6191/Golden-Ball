@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Golden Ball | Leaderboard</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="/" class="brand">
+
+            <div class="brand-icon">
+                🏆
+            </div>
+
+            <div class="brand-text">
+
+                <span class="brand-main">
+                    GOLDEN BALL
+                </span>
+
+                <span class="brand-sub">
+                    FOOTBALL AWARDS
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <nav class="nav-links">
+
+            <a href="/" class="nav-link">
+                Home
+            </a>
+
+            <a href="candidates.html" class="nav-link">
+                Candidates
+            </a>
+
+            <a href="leaderboard.html" class="nav-link active">
+                Leaderboard
+            </a>
+
+            <a href="about.html" class="nav-link">
+                About
+            </a>
+
+            <a href="login.html"
+               id="loginNav"
+               class="login-link">
+                Login
+            </a>
+
+            <span
+                id="userNav"
+                class="login-link"
+                style="display: none;">
+                👤 Fan
+            </span>
+
+            <button
+                id="logoutButton"
+                class="login-link"
+                onclick="logout()"
+                style="display: none;">
+                Logout
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<main>
+
+
+    <section class="candidates-hero">
+
+        <div class="candidates-hero-content">
+
+            <div class="hero-label">
+
+                <span class="label-line"></span>
+
+                GOLDEN BALL 2026
+
+            </div>
+
+
+            <h1>
+                The
+                <span>Leaderboard.</span>
+            </h1>
+
+
+            <p>
+
+                Live standings for this year's Golden Ball,
+                ranked by combined score. Check back often —
+                the race changes as votes and stats come in.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+<!-- =====================================================
+     LEADERBOARD
+===================================================== -->
+
+    <section class="candidates-section">
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                CURRENT STANDINGS
+            </div>
+
+            <h2>
+                Top 30 contenders.
+            </h2>
+
+            <p>
+                Ranked by final score. Refresh anytime
+                to see the latest positions.
+            </p>
+
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <div id="leaderboardMessage"
+             class="candidate-message">
+
+        </div>
+
+
+        <!-- LEADERBOARD LIST -->
+
+        <div id="leaderboardList"
+             class="leaderboard-list">
+
+            <div class="candidate-loading">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    Loading leaderboard...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <div class="brand-icon">
+                🏆
+            </div>
+
+            <div>
+
+                <strong>
+                    GOLDEN BALL
+                </strong>
+
+                <p>
+                    Football Awards
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/candidates.html">
+                Candidates
+            </a>
+
+            <a href="/leaderboard.html">
+                Leaderboard
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © <span id="currentYear"></span>
+            Golden Ball
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- SHARED AUTH SCRIPT (must load before leaderboard.js) -->
+
+<script src="auth.js"></script>
+
+<script src="leaderboard.js"></script>
+
+</body>
+
+</html>

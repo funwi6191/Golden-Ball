@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Golden Ball | Football Awards</title>
+
+    <link rel="stylesheet"
+          href="styles/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="/" class="brand">
+
+                <div class="brand-icon">
+                    🏆
+                </div>
+
+                <div class="brand-text">
+                    <span class="brand-main">
+                        GOLDEN BALL
+                    </span>
+
+                    <span class="brand-sub">
+                        FOOTBALL AWARDS
+                    </span>
+                </div>
+
+            </a>
+
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <nav class="nav-links">
+
+                <a href="/" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="html-pages/candidates.html"
+                   class="nav-link">
+                    Candidates
+                </a>
+
+                <a href="html-pages/leaderboard.html"
+                   class="nav-link">
+                    Leaderboard
+                </a>
+
+                <a href="html-pages/about.html"
+                   class="nav-link">
+                    About
+                </a>
+
+                <a href="html-pages/login.html"
+                   id="loginNav"
+                   class="login-link">
+                    Login
+                </a>
+
+                <span
+                    id="userNav"
+                    class="login-link"
+                    style="display: none;">
+                    👤 Fan
+                </span>
+
+                <button
+                    id="logoutButton"
+                    class="login-link"
+                    onclick="logout()"
+                    style="display: none;">
+                    Logout
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <div class="hero-label">
+
+                        <span class="label-line"></span>
+
+                        THE PEOPLE'S FOOTBALL AWARD
+
+                    </div>
+
+
+                    <h1>
+
+                        Who deserves
+
+                        <span>
+                            the crown?
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-text">
+
+                        The Golden Ball brings football fans
+                        and player performance together to
+                        determine who truly deserves the
+                        ultimate individual honour.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="html-pages/candidates.html"
+                           class="btn btn-primary">
+
+                            <span>🗳</span>
+
+                            Vote for a Player
+
+                        </a>
+
+
+                        <a href="html-pages/leaderboard.html"
+                           class="btn btn-secondary">
+
+                            View Leaderboard
+
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-stats">
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                30%
+                            </strong>
+
+                            <span>
+                                Fan Vote
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                70%
+                            </strong>
+
+                            <span>
+                                Performance
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                1
+                            </strong>
+
+                            <span>
+                                Winner
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TROPHY -->
+
+                <div class="hero-visual">
+
+                    <div class="trophy-glow"></div>
+
+                    <div class="trophy-ring ring-one"></div>
+
+                    <div class="trophy-ring ring-two"></div>
+
+                    <div class="trophy-card">
+
+                        <div class="trophy-top">
+                            GOLDEN BALL
+                        </div>
+
+                        <div class="trophy-icon">
+                            🏆
+                        </div>
+
+                        <div class="trophy-bottom">
+                            PLAYER OF THE YEAR
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             VOTING STATUS
+        ========================== -->
+
+        <section class="status-wrapper">
+
+            <div class="status-card">
+
+                <div class="status-indicator">
+
+                    <span class="status-dot"></span>
+
+                    <div>
+
+                        <strong id="votingStatus">
+                             Checking voting status...
+                        </strong>
+
+                        <p id="votingStatusMessage">
+                             Please wait.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="status-middle">
+
+                    <span>
+                        CURRENT AWARD
+                    </span>
+
+                    <strong id="awardName">
+                        Golden Ball 2026
+                    </strong>
+
+                </div>
+
+
+                <a href="html-pages/candidates.html"
+                   class="status-button">
+
+                    Cast Your Vote
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <section class="how-section">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    HOW IT WORKS
+                </div>
+
+                <h2>
+                    More than just popularity.
+                </h2>
+
+                <p>
+                    The Golden Ball combines the passion
+                    of football fans with measurable
+                    player performance.
+                </p>
+
+            </div>
+
+
+            <div class="method-grid">
+
+
+                <!-- FAN VOTE -->
+
+                <div class="method-card">
+
+                    <div class="method-number">
+                        01
+                    </div>
+
+                    <div class="method-icon">
+                        👥
+                    </div>
+
+                    <h3>
+                        Fan Vote
+                    </h3>
+
+                    <div class="method-percentage">
+                        30%
+                    </div>
+
+                    <p>
+                        Verified fans choose the player
+                        they believe deserves the award.
+                    </p>
+
+                </div>
+
+
+                <!-- PERFORMANCE -->
+
+                <div class="method-card featured">
+
+                    <div class="method-number">
+                        02
+                    </div>
+
+                    <div class="method-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Performance
+                    </h3>
+
+                    <div class="method-percentage">
+                        70%
+                    </div>
+
+                    <p>
+                        Player performance statistics
+                        contribute to the final ranking.
+                    </p>
+
+                </div>
+
+
+                <!-- FINAL SCORE -->
+
+                <div class="method-card">
+
+                    <div class="method-number">
+                        03
+                    </div>
+
+                    <div class="method-icon">
+                        🏆
+                    </div>
+
+                    <h3>
+                        Final Score
+                    </h3>
+
+                    <div class="method-percentage">
+                        100%
+                    </div>
+
+                    <p>
+                        Both scores are combined to
+                        determine the final leaderboard.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CALL TO ACTION
+        ========================== -->
+
+        <section class="cta-section">
+
+            <div class="cta-content">
+
+                <div class="cta-label">
+                    YOUR VOICE MATTERS
+                </div>
+
+                <h2>
+                    Ready to choose your winner?
+                </h2>
+
+                <p>
+                    Explore this year's candidates and
+                    cast your vote for the player you
+                    believe deserves the Golden Ball.
+                </p>
+
+                <a href="html-pages/candidates.html"
+                   class="btn btn-primary">
+
+                    Explore Candidates
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="brand-icon">
+                    🏆
+                </div>
+
+                <div>
+
+                    <strong>
+                        GOLDEN BALL
+                    </strong>
+
+                    <p>
+                        Football Awards
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="/">
+                    Home
+                </a>
+
+                <a href="html-pages/candidates.html">
+                    Candidates
+                </a>
+
+                <a href="html-pages/leaderboard.html">
+                    Leaderboard
+                </a>
+
+                <a href="html-pages/about.html">
+                    About
+                </a>
+
+            </div>
+
+
+            <div class="footer-copy">
+
+                © <span id="currentYear"></span> Golden Ball
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- SHARED AUTH SCRIPT (must load before index.js) -->
+
+    <script src="js/auth.js"></script>
+
+    <!-- HOME PAGE JAVASCRIPT -->
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
