@@ -24,7 +24,6 @@ Add screenshots of your actual application to the `images/` folder in this repos
 
 ![Golden Ball Leaderboard](images/voting.jpg)
 
-> Replace the example filenames with your actual screenshot filenames. GitHub will display the images automatically when the paths match.
 
 ## ✨ Features
 
